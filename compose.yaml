@@ -39,6 +39,14 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - 8080:80
+    depends_on:
+      - db
+    environment:
+      - PMA_HOST=db
 volumes:
   db-data:
 secrets:
