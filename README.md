@@ -19,7 +19,6 @@ Let's get started!
 ? What local port do you want to use to access your server? 9000
 
 ---
-
 # syntax=docker/dockerfile:1
 
 FROM composer:lts as deps
@@ -37,7 +36,6 @@ COPY ./src /var/www/html
 USER www-data
 
 ---
-
 # syntax=docker/dockerfile:1
 
 FROM composer:lts as prod-deps
