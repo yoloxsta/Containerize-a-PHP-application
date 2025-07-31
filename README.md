@@ -1,8 +1,6 @@
 # docker-php-sample
 
 - A simple PHP web application example lab
-
-
 ```
 docker init
 Welcome to the Docker Init CLI!
